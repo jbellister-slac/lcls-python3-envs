@@ -19,6 +19,7 @@ dependencies:
   - epicscorelibs
   - gpflow
   - gpy
+  - gpytorch
   - gym
   - h5py
   - hdf5
@@ -51,13 +52,15 @@ dependencies:
   - pydantic
   - pydm
   - pyepics
+  - pygments
   - pyqt
   - pyqtgraph
   - pytao
   - pytest
-  - python=3.8
+  - python=3.9
   - pytorch
   - pytz
+  - pyyaml
   - pyzmq
   - qtpy
   - requests
@@ -70,6 +73,7 @@ dependencies:
   - tensorflow
   - tensorflow-probability
   - theano
+  - tqdm
   - treelib
   - xopt
   - pip:
