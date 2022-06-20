@@ -10,6 +10,7 @@ dependencies:
   - bokeh
   - botorch
   - caproto
+  - coloredlogs
   - cothread
   - cx_oracle
   - dask
@@ -48,6 +49,7 @@ dependencies:
   - openpmd-beamphysics
   - p4p
   - pandas
+  - pcdsutils
   - pip
   - pint
   - pydantic
@@ -57,7 +59,7 @@ dependencies:
   - pyqtgraph
   - pytao
   - pytest
-  - python=3.8
+  - python=3.7
   - pytorch
   - pytz
   - pyzmq
