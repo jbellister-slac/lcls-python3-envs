@@ -10,7 +10,6 @@ dependencies:
   - bokeh
   - botorch
   - caproto
-  - coloredlogs
   - cothread
   - cx_oracle
   - dask
