@@ -49,7 +49,6 @@ dependencies:
   - openpmd-beamphysics
   - p4p
   - pandas
-  - pcdsutils
   - pip
   - pint
   - pydantic
