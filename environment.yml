@@ -48,7 +48,7 @@ dependencies:
   - numpy
   - openmpi
   - openpmd-beamphysics
-  - p4p?=3.5.5
+  - p4p>=3.5.5
   - pandas
   - pip
   - pint
