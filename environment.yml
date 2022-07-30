@@ -55,7 +55,7 @@ dependencies:
   - pydantic
   - pydm
   - pyepics
-  - pyqt
+  - pyqt>=5.12
   - pyqtgraph
   - pytao
   - pytest
