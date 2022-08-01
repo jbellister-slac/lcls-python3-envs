@@ -1,7 +1,6 @@
 name: python3.8env
 channels:
   - conda-forge
-  - defaults
 dependencies:
   - alembic
   - bmad
@@ -55,7 +54,7 @@ dependencies:
   - pydantic
   - pydm
   - pyepics
-  - pyqt>=5.12
+  - pyqt
   - pyqtgraph
   - pytao
   - pytest
