@@ -16,6 +16,10 @@ jobs:
       image: rockylinux:9
     name: Build environment
     steps:
+      - name: Install System Dependencies
+      - run: |
+          dnf install -y curl git tar bzip2 unzip xz
+          dnf clean all
       - name: Checkout Repository
         uses: actions/checkout@v4
       - name: Setup conda
@@ -40,3 +44,4 @@ jobs:
           tag: rhel7-nightly
           overwrite: true
           file_glob: true
+curl wget bzip2 git gcc
