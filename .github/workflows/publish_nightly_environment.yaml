@@ -31,6 +31,9 @@ jobs:
           miniforge-version: latest
           activate-environment: python3_devel
           conda-remove-defaults: true
+      - name: Pack environment
+        run: |
+          conda pack -n $ENVIRONMENT_NAME --ignore-missing-files --output $HOME/$ENVIRONMENT_NAME.tar.gz
       # Artifact uploads to a published release on GitHub must remain under 2GB or the job will fail
       # So we split the final output up here, and can reassemble when downloading it elsewhere
       - name: Split output artifact to stay under 2GB upload per file limit
@@ -41,6 +44,6 @@ jobs:
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           file: ${{ env.ENVIRONMENT_NAME }}.tar.gz.*
-          tag: rhel7-nightly
+          tag: python3-devel
           overwrite: true
           file_glob: true
