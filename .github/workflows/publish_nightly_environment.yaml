@@ -17,7 +17,7 @@ jobs:
     name: Build environment
     steps:
       - name: Install System Dependencies
-      - run: |
+        run: |
           dnf install -y curl git tar bzip2 unzip xz
           dnf clean all
       - name: Checkout Repository
