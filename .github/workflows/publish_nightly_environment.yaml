@@ -26,11 +26,16 @@ jobs:
         uses: conda-incubator/setup-miniconda@v3
         with:
           python-version: "3.10"
-          environment-file: python3_devel.yml
+          #environment-file: python3_devel.yml
           miniforge-variant: Miniforge3
           miniforge-version: latest
-          activate-environment: python3_devel
+          #activate-environment: python3_devel
           conda-remove-defaults: true
+      - name: Set up environment
+        run: |
+          mamba install -y -c conda-forge conda-pack
+          mamba env create -f python3_devel.yml
+          mamba activate python3_devel
       - name: Pack environment
         run: |
           conda pack -n $ENVIRONMENT_NAME --ignore-missing-files --output $HOME/$ENVIRONMENT_NAME.tar.gz
