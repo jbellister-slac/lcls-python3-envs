@@ -18,7 +18,7 @@ jobs:
     steps:
       - name: Install System Dependencies
         run: |
-          dnf install -y curl git tar bzip2 unzip xz
+          dnf install -y curl git bzip2 unzip xz
           dnf clean all
       - name: Checkout Repository
         uses: actions/checkout@v4
