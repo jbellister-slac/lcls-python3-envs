@@ -44,4 +44,3 @@ jobs:
           tag: rhel7-nightly
           overwrite: true
           file_glob: true
-curl wget bzip2 git gcc
