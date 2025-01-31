@@ -35,7 +35,7 @@ jobs:
         run: |
           mamba install -y -c conda-forge conda-pack
           mamba env create -f python3_devel.yml
-          mamba activate python3_devel
+          conda activate python3_devel
       - name: Pack environment
         run: |
           conda pack -n $ENVIRONMENT_NAME --ignore-missing-files --output $HOME/$ENVIRONMENT_NAME.tar.gz
