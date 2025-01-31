@@ -8,6 +8,7 @@ dependencies:
   - python=3.10
   - pip:
     - slac-alarm-manager
+    - git+https://github.com/slaclab/Badger
     - git+https://github.com/slaclab/edef
     - git+https://github.com/slaclab/edlgenerator
     - git+https://github.com/slaclab/edmbutton
