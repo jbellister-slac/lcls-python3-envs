@@ -4,6 +4,7 @@ channels:
 dependencies:
   - conda-pack
   - kafka-python
+  - python=3.10
   - pip:
     - cheetah-accelerator
     - Cheetah3
