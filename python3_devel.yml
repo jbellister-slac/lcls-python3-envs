@@ -8,6 +8,7 @@ dependencies:
   - python=3.10
   - pip:
     - slac-alarm-manager
+    - git+https://github.com/slaclab/lume-model
 #
 # Stuff that isn't on PyPI or GitHub that is manually installed in prod
 # epics-batch-get
