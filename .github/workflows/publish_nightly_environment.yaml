@@ -1,4 +1,4 @@
-name: Publish RHEL7 compatible nightly release
+name: Publish the nightly release
 
 on:
   schedule:
