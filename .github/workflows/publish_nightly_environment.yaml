@@ -16,13 +16,6 @@ jobs:
       image: rockylinux:9
     name: Build environment
     steps:
-      - name: Free disk space
-        run: |
-          sudo swapoff -a
-          sudo rm -f /swapfile
-          sudo dnf clean all
-          docker rmi $(docker image ls -aq)
-          df -h
       - name: Checkout Repository
         uses: actions/checkout@v4
       - name: Setup conda
