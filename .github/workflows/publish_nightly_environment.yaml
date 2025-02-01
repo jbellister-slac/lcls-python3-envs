@@ -34,7 +34,7 @@ jobs:
       - name: Pack environment
         shell: bash -el {0}
         run: |
-          conda pack -n $ENVIRONMENT_NAME --ignore-missing-files --output $HOME/$ENVIRONMENT_NAME.tar.gz
+          conda pack -n $ENVIRONMENT_NAME --ignore-missing-files --output $ENVIRONMENT_NAME.tar.gz
       # Artifact uploads to a published release on GitHub must remain under 2GB or the job will fail
       # So we split the final output up here, and can reassemble when downloading it elsewhere
       - name: Split output artifact to stay under 2GB upload per file limit
