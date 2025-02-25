@@ -80,7 +80,7 @@ dependencies:
   - pytest-qt
   - python=3.10
   - python-vxi11
-  - pytorch
+  - pytorch=2.6.0
   - pytorch-cuda=12.4
   - pytz
   - pyzmq
