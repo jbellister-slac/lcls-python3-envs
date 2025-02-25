@@ -1,5 +1,7 @@
 name: python3_devel
 channels:
+  - pytorch
+  - nvidia
   - conda-forge
 dependencies:
   - alembic
