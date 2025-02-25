@@ -81,7 +81,7 @@ dependencies:
   - python=3.10
   - python-vxi11
   - pytorch
-  - pytorch-cuda=12.3
+  - pytorch-cuda=12.4
   - pytz
   - pyzmq
   - qtpy
