@@ -1,6 +1,6 @@
 name: python3_devel
 channels:
-  - nvidia/label/cuda-12.6.0
+  - nvidia/label/cuda-12.3.2
   - conda-forge
 dependencies:
   - alembic
@@ -13,7 +13,7 @@ dependencies:
   - caproto
   - conda-pack
   - cothread
-  - cuda-cudart
+  - cuda-toolkit
   - cx_oracle
   - dask
   - dateparser
