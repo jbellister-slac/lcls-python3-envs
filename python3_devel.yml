@@ -104,9 +104,6 @@ dependencies:
     - opencv-contrib-python
     - p4p
     - slac-alarm-manager
-    - torch 
-    - torchvision 
-    - torchaudio
     - git+https://github.com/xopt-org/Badger
     - git+https://github.com/slaclab/edef
     - git+https://github.com/slaclab/edlgenerator
